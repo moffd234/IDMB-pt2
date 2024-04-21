@@ -11,10 +11,10 @@
             <th>Episode</th>
             <th>Rating</th>
           </tr>
-          <tr>
-            <td>Breaking Bad</td>
-            <td>Ozymandias</td>
-            <td>10.0</td>
+          <tr th:object="${bb}">
+            <td th:text="*{title}"></td>
+            <td th:text="*{episode}"></td>
+            <td th:text="*{rating}"></td>
           </tr>
           <tr>
             <td>Attack on Titan</td>
